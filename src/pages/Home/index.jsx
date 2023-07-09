@@ -31,8 +31,8 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-between px-5">
-          <div className="flex gap-2 items-center">
+        <div className="flex items-center justify-between sm:px-5">
+          <div className="flex gap-0.5 sm:gap-2 items-center">
             <div
               className={`${
                 activeMenu === 1
