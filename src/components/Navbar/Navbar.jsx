@@ -45,13 +45,6 @@ export default function Navbar() {
           {/* <i className="bx bx-basket"></i> */}
           STORE.
         </Link>
-        {/* {mobileMenu && (
-          <MenuMobile
-            showCatMenu={showCatMenu}
-            setShowCatMenu={setshowCatMenu}
-            setMobileMenu={setMobile}
-          />
-        )} */}
 
         <div className="flex items-center gap-2 text-black">
           <Menu />

@@ -12,7 +12,11 @@ const HomePage = () => {
   const [activeMenu, setActiveMenu] = useState(1);
 
   const { data, loading, error } = useFetch(
-    `${type=== "all" ? `/products?populate=*&pagination[limit]=6` : `/products?populate=*&[filters][type][$eq]=${type}&pagination[limit]=6`}`
+    `${
+      type === "all"
+        ? `/products?populate=*&pagination[limit]=6`
+        : `/products?populate=*&[filters][type][$eq]=${type}&pagination[limit]=6`
+    }`
   );
 
   return (
@@ -74,7 +78,10 @@ const HomePage = () => {
               Trending
             </div>
           </div>
-          <Link to="/shop" className="flex items-center gap-2 group cursor-pointer">
+          <Link
+            to="/shop"
+            className="flex items-center gap-2 group cursor-pointer"
+          >
             <div className="text-sm md:text-base">Show All</div>
             <div className="group-hover:translate-x-[7px] duration-300">
               <AiOutlineArrowRight size={14} />
@@ -84,9 +91,13 @@ const HomePage = () => {
 
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-14 px-5 md:px-0 justify-items-center">
           {error ? (
-            <div className="col-span-full flex justify-center items-center">Something error</div>
+            <div className="col-span-full flex justify-center items-center">
+              Something error
+            </div>
           ) : loading ? (
-            <div className="col-span-full flex justify-center items-center">Loading...</div>
+            <div className="col-span-full flex justify-center items-center">
+              Loading...
+            </div>
           ) : (
             data.map((item) => {
               return <Product key={item.id} data={item} />;

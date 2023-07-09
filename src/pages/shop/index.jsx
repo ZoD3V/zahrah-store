@@ -80,7 +80,7 @@ const ShopPage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-[50px] lg:gap-[100px] pt-12 container mx-auto px-5 h-screen">
+        <div className="flex flex-col lg:flex-row gap-[50px] lg:gap-[100px] pt-12 container mx-auto px-5">
           {/* Left */}
           <div className="w-full md:w-auto flex-[1] max-w-[500px] lg:max-w-full mx-auto lg:mx-0">
             <h3 className="text-md font-bold">Category</h3>
