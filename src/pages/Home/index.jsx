@@ -36,7 +36,7 @@ const HomePage = () => {
             <div
               className={`${
                 activeMenu === 1
-                  ? "py-1 px-2 text-white bg-black rounded-md cursor-pointer"
+                  ? "py-1 px-2 text-white bg-black rounded-md cursor-pointer text-sm md:text-base"
                   : "py-1 px-2 text-black rounded-md cursor-pointer"
               }`}
               onClick={() => {
@@ -50,7 +50,7 @@ const HomePage = () => {
             <div
               className={`${
                 activeMenu === 2
-                  ? "py-1 px-2 text-white bg-black rounded-md cursor-pointer"
+                  ? "py-1 px-2 text-white bg-black rounded-md cursor-pointer text-sm md:text-base"
                   : "py-1 px-2 text-black rounded-md cursor-pointer"
               }`}
               onClick={() => {
@@ -63,7 +63,7 @@ const HomePage = () => {
             <div
               className={`${
                 activeMenu === 3
-                  ? "py-1 px-2 text-white bg-black rounded-md cursor-pointer"
+                  ? "py-1 px-2 text-white bg-black rounded-md cursor-pointer text-sm md:text-base"
                   : "py-1 px-2 text-black rounded-md cursor-pointer"
               }`}
               onClick={() => {
@@ -75,7 +75,7 @@ const HomePage = () => {
             </div>
           </div>
           <Link to="/shop" className="flex items-center gap-2 group cursor-pointer">
-            <div className="">Show All</div>
+            <div className="text-sm md:text-base">Show All</div>
             <div className="group-hover:translate-x-[7px] duration-300">
               <AiOutlineArrowRight size={14} />
             </div>
